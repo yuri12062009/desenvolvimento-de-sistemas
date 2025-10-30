@@ -46,7 +46,22 @@
     <h2>
         Inscreva-se agora
     </h2>
-    <input type="text" contenteditable="email">
+ <form>
+    <br>
+    <label for="nome">Nome</label>
+    <br>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <label for="email">email</label>
+    <br>
+    <input type="email" id="email"name="email" required="">
+    <br>
+    <label for="texto">Por que você quer fazer o curso?</label>
+    <br>
+    <input type="text" id="texto" name="texto" required=""> 
+    <br>
+    <button id="button" onclick="enviar()">Enviar inscrição</button>
+</form>
     </tbody>
 </main>
 <footer>
@@ -56,6 +71,16 @@
             Curso Técnico em Desenvolvimento de Sistemas
         </h4>
     </tfoot>
+    <script>
+        function enviar(){
+            // let button="mensagem enviada";
+            // document.getElementById("button").textContent="button";
+            alert("Mensagem enviada")
+        }
+    </script>
 </footer>
 </body>
+</html>
+</body>
+
 </html>
